@@ -1560,17 +1560,47 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Video files mapping
             const videoFiles = {
-                'english': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                'filipino': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-                'hindi': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-                'portuguese': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-                'spanish': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-                'tamil': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-                'arabic': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
-                'japanese': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
-                'french': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
-                'swedish': 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4'
-            };
+    'english': {
+        primary: 'https://translationmeta2025-f87fc.web.app/english.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+    },
+    'filipino': {
+        primary: 'https://translationmeta2025-f87fc.web.app/filipino.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+    },
+    'hindi': {
+        primary: 'https://translationmeta2025-f87fc.web.app/hindi.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4'
+    },
+    'portuguese': {
+        primary: 'https://translationmeta2025-f87fc.web.app/portuguese.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'
+    },
+    'spanish': {
+        primary: 'https://translationmeta2025-f87fc.web.app/spanish.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4'
+    },
+    'tamil': {
+        primary: 'https://translationmeta2025-f87fc.web.app/Tamil.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4'
+    },
+    'arabic': {
+        primary: 'https://translationmeta2025-f87fc.web.app/Arabic.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4'
+    },
+    'french': {
+        primary: 'https://translationmeta2025-f87fc.web.app/French.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4'
+    },
+    'swedish': {
+        primary: 'https://translationmeta2025-f87fc.web.app/Swedish.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4'
+    },
+    'japanese': {
+        primary: 'https://translationmeta2025-f87fc.web.app/japanese.mp4',
+        fallback: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
+    }
+};
             
             // Language modal elements
             const languageModal = document.getElementById('languageModal');
